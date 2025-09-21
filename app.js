@@ -38,7 +38,7 @@ let nombreSeleccionado;
 function sortearAmigo(){
     if(amigos.length != 0){
         //Genera el indice aleatorio para indicar que amigo sale sorteado
-        indiceAleatorio = parseInt(Math.floor(Math.random()*amigos.length)+1);
+        indiceAleatorio = parseInt(Math.floor(Math.random()*(amigos.length)));
         console.log(indiceAleatorio);
         //Se selecciona el nombre y se crea un mensaje
         nombreSeleccionado = document.createElement('li');
